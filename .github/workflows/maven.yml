@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env: 
-      imagename: ${{ github.actor }}/monImage:${{ github.ref_name }}
+      imagename: ${{ github.actor }}/monimage:${{ github.ref_name }}
 
     steps:
 
