@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env: 
-      imagename: ${{ vars.DOCKERHUB_USERNAME }}/monimage:${{ github.ref_name }}
+      imagename: lucie05fr/monimage:${{ github.ref_name }}
 
     steps:
 
