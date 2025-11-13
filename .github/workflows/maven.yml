@@ -15,13 +15,13 @@ on:
   pull_request:
     branches: [ "*" ]
 
+env: 
+  imagename: ${{ vars.DOCKERHUB_USERNAME }}/monimage:${{ github.ref_name }}
+
 jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    env: 
-      imagename: ${{ vars.DOCKERHUB_USERNAME }}/monimage:${{ github.ref_name }}
 
     steps:
 
