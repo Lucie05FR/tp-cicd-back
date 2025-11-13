@@ -72,3 +72,4 @@ jobs:
         with:
           deploy-hook: ${{ secrets.DOCKERHUB_DEPLOYHOOK }}
           render-api-key: ${{ secrets.RENDER_API_KEY }}
+          image-url: ${{ env.image_name }}
