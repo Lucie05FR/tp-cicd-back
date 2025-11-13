@@ -13,7 +13,8 @@ on:
     branches: [ "*" ]
   pull_request:
     branches: [ "*" ]
-  release: [ "*" ]
+  release: 
+    types : [ "*" ]
 
 jobs:
   build:
