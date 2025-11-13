@@ -67,7 +67,7 @@ jobs:
         run: pnpm run build
 
       - name: Deploy to Render
-        uses: permisso/deploy-to-render@v1.1
+        uses: gh-actions-workflows/deploy-docker-render@v1.1
         with:
           deploy-hook: ${{ secrets.DOCKERHUB_DEPLOYHOOK }}
           render-api-key: ${{ secrets.RENDER_API_KEY }}
